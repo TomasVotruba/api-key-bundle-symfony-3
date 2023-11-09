@@ -63,10 +63,10 @@ class ApiKeyProvider implements AuthenticationProviderInterface
             return false;
         }
 
-        /** @var UserInterface $user */
+        /** @var UserInterface|null $user */
         $user = $provider->loadUserByApiKey($token->getCredentials());
 
-        if ($user) {
+        if ($user instanceof UserInterface) {
             $authenticatedToken = new ApiKeyUserToken($user->getRoles());
             $authenticatedToken->setUser($user);
 
