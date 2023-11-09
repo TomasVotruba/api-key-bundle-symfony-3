@@ -1,4 +1,5 @@
 <?php
+
 namespace Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider;
 
 use FOS\UserBundle\Security\UserProvider as FOSUserProvider;
