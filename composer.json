@@ -1,7 +1,7 @@
 {
     "name": "tomasvotruba/api-key-bundle-symfony-3",
     "description": "Creates an avenue for using ApiKey authentication for Symfony using FOSUserBundle",
-    "license": "Apache 2.0",
+    "license": "MIT",
     "require": {
         "php": "^7.4|^8.0",
         "symfony/dependency-injection": "^3.4",
