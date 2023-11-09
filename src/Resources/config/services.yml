@@ -13,9 +13,9 @@ services:
         arguments: ["@security.token_storage", "@security.authentication.manager", "@uecode.api_key.extractor"]
     uecode.api_key.extractor.query:
         class: Uecode\Bundle\ApiKeyBundle\Extractor\QueryExtractor
-        arguments: [%uecode.api_key.parameter_name%]
+        arguments: ["%uecode.api_key.parameter_name%"]
     uecode.api_key.extractor.header:
         class: Uecode\Bundle\ApiKeyBundle\Extractor\HeaderExtractor
-        arguments: [%uecode.api_key.parameter_name%]
+        arguments: ["%uecode.api_key.parameter_name%"]
     uecode.api_key.generator:
         class: Uecode\Bundle\ApiKeyBundle\Util\ApiKeyGenerator
